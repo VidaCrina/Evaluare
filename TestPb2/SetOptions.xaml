@@ -1,0 +1,324 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SetOptions" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1164,2396" sap2010:WorkflowViewState.IdRef="SetOptions_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="28">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="24">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SetOptions" sap:VirtualizedContainerService.HintSize="530,2231" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="counter" />
+      <Variable x:TypeArguments="x:String" Name="country" />
+      <Variable x:TypeArguments="x:String" Name="Countrys" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Generate a Random Name - Fake Name Generator" sap:VirtualizedContainerService.HintSize="488,2139" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" OpenMode="IfNotOpen" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="454,1883" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Set Name to Italian" sap:VirtualizedContainerService.HintSize="412,134" sap2010:WorkflowViewState.IdRef="SelectItem_1" Item="Italian">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="64">
+                  <x:String>American</x:String>
+                  <x:String>Arabic</x:String>
+                  <x:String>Australian</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Chechen (Latin)</x:String>
+                  <x:String>Chinese</x:String>
+                  <x:String>Chinese (Traditional)</x:String>
+                  <x:String>Croatian</x:String>
+                  <x:String>Czech</x:String>
+                  <x:String>Danish</x:String>
+                  <x:String>Dutch</x:String>
+                  <x:String>England/Wales</x:String>
+                  <x:String>Eritrean</x:String>
+                  <x:String>Finnish</x:String>
+                  <x:String>French</x:String>
+                  <x:String>German</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hispanic</x:String>
+                  <x:String>Hobbit</x:String>
+                  <x:String>Hungarian</x:String>
+                  <x:String>Icelandic</x:String>
+                  <x:String>Igbo</x:String>
+                  <x:String>Italian</x:String>
+                  <x:String>Japanese</x:String>
+                  <x:String>Japanese (Anglicized)</x:String>
+                  <x:String>Klingon</x:String>
+                  <x:String>Ninja</x:String>
+                  <x:String>Norwegian</x:String>
+                  <x:String>Persian</x:String>
+                  <x:String>Polish</x:String>
+                  <x:String>Russian</x:String>
+                  <x:String>Russian (Cyrillic)</x:String>
+                  <x:String>Scottish</x:String>
+                  <x:String>Slovenian</x:String>
+                  <x:String>Swedish</x:String>
+                  <x:String>Thai</x:String>
+                  <x:String>Vietnamese</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f4e94873-2b18-427c-8695-a6d2175ab8b3" InformativeScreenshot="8e9bb52bf3072ef7cdd199aac865806f" Selector="&lt;webctrl tag='P' /&gt;&lt;nav up='1' /&gt;&lt;webctrl tag='SELECT' id='n' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:SelectItem>
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text - get countrys options" sap:VirtualizedContainerService.HintSize="412,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+              <ui:GetValue.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ccb5d1f1-b534-4bd5-bd72-eaca77c194f0" InformativeScreenshot="5e42de3367d966dbe004b536421003ee" Selector="&lt;webctrl id='c' tag='SELECT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetValue.Target>
+              <ui:GetValue.Value>
+                <OutArgument x:TypeArguments="x:String">[Countrys]</OutArgument>
+              </ui:GetValue.Value>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:GetValue>
+            <ui:InputDialog OptionsString="{x:Null}" DisplayName=" Choose Country - Input Dialog" sap:VirtualizedContainerService.HintSize="412,291" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Country:" Options="[Countrys.Split(vbCrLf.ToCharArray)]" Title="Country">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[country]</OutArgument>
+              </ui:InputDialog.Result>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InputDialog>
+            <ui:SelectItem AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Select Item - Set Country" sap:VirtualizedContainerService.HintSize="412,134" sap2010:WorkflowViewState.IdRef="SelectItem_2" Item="[country]">
+              <ui:SelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="32">
+                  <x:String>Australia</x:String>
+                  <x:String>Austria</x:String>
+                  <x:String>Belgium</x:String>
+                  <x:String>Brazil</x:String>
+                  <x:String>Canada</x:String>
+                  <x:String>Cyprus (Anglicized)</x:String>
+                  <x:String>Cyprus (Greek)</x:String>
+                  <x:String>Czech Republic</x:String>
+                  <x:String>Denmark</x:String>
+                  <x:String>Estonia</x:String>
+                  <x:String>Finland</x:String>
+                  <x:String>France</x:String>
+                  <x:String>Germany</x:String>
+                  <x:String>Greenland</x:String>
+                  <x:String>Hungary</x:String>
+                  <x:String>Iceland</x:String>
+                  <x:String>Italy</x:String>
+                  <x:String>Netherlands</x:String>
+                  <x:String>New Zealand</x:String>
+                  <x:String>Norway</x:String>
+                  <x:String>Poland</x:String>
+                  <x:String>Portugal</x:String>
+                  <x:String>Slovenia</x:String>
+                  <x:String>South Africa</x:String>
+                  <x:String>Spain</x:String>
+                  <x:String>Sweden</x:String>
+                  <x:String>Switzerland</x:String>
+                  <x:String>Tunisia</x:String>
+                  <x:String>United Kingdom</x:String>
+                  <x:String>United States</x:String>
+                  <x:String>Uruguay</x:String>
+                </scg:List>
+              </ui:SelectItem.Items>
+              <ui:SelectItem.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2c7ac5aa-4834-41df-a76a-8bec79beb5d3" InformativeScreenshot="d06339c6a4350452f352e28965f312aa" Selector="&lt;webctrl idx='3' tag='P' /&gt;&lt;nav up='1' /&gt;&lt;webctrl id='c' tag='SELECT' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SelectItem.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:SelectItem>
+            <uix:NClick ClickType="Single" DisplayName="Click -set 55% male" sap:VirtualizedContainerService.HintSize="412,166" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.fakenamegenerator.com/advanced.php" DesignTimeRectangle="628, 474, 255, 12" FriendlyName="'DIV slider'" FullSelectorArgument="&lt;webctrl id='slider' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='slider' tag='DIV' type='' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQMAAAAQCAYAAAAS5BpKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVHhe7ZstjoRQEIT3CgSBQGAQoBAIEm6AwHAY4B5ci3ABLIYDoAjpTQkIkzwm7LDm9VQln5rX7erL8PcjjOp0XSdVVUmWZR+DeexhdIcyUJ62bSXPc2PJ74J57GF050UGy7LIOI4yDIP0fU8U0DSNseB/BXtM+4l9oN/oOfp+ziED/IBD8zzLuq6ybRtRwH/KwLSf2Af6jZ6j72chHDKAKXDANEzshTIgV6Dv6P2eQwawBP8R6IMyIFeg7+j9nkMGuJYwDRC7oQzIO9D7PZSBclDiMAwfQxnohDL4IlBix3EeQxnohDL4IlBi13UfQxnoxCgD3kDUCUrsed5jKAN9XN5A5KNFnaDEvu8/hjLQx+WjRb50pBOUOAiCx1AGekC/0XP03fjSEYIfYAocwrUEsR+UOIoi4xOCu2Aee0z7iX2g3+j5WQTIiwwYfcHXhkVRSBzHH4N5frWoP5SB8kzTJHVdS1mWkqapJElyG5zHHOaxh9EckV/wKlVpWjgdMAAAAABJRU5ErkJggg==" InformativeScreenshot="6242605b859037105565b685bbb0e08e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator' /&gt;" SearchSteps="Selector" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="412,61" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">0</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="412,511" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,346" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey - move slider to the left" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="left" KeyModifiers="None" SpecialKey="True">
+                    <ui:SendHotkey.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d4304d1-89c1-42fe-98ee-fd149b8c3836" InformativeScreenshot="d3b1c2af3936706bb08dc65a48991bd9" Selector="&lt;webctrl id='slider' tag='DIV' /&gt;">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                        <ui:Target.WaitForReady>
+                          <InArgument x:TypeArguments="ui:WaitForReady" />
+                        </ui:Target.WaitForReady>
+                      </ui:Target>
+                    </ui:SendHotkey.Target>
+                  </ui:SendHotkey>
+                  <Assign DisplayName="Assign - increment counter" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Int32">[counter+1]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+              <ui:InterruptibleWhile.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="counter &lt; 5" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+              </ui:InterruptibleWhile.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InterruptibleWhile>
+            <ui:Click AlterIfDisabled="{x:Null}" CursorMotionType="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click - &quot;Generate&quot; button" sap:VirtualizedContainerService.HintSize="412,106" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="af12a283-1f01-4586-af7d-e8a7175250ab" InformativeScreenshot="1e7bb6790a49b4f2aafc86ebf0c882a9" Selector="&lt;webctrl tag='INPUT' type='submit' aaname='Generate' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPlSURBVGhD7ZnbSxRhGMYLwvPmeiK8UIM06Kq/wCsDk4qCuinzFP5DgRRJ90GoBNFNZgaeD+vu6h5a1/V8yA4XqRmi7tvzDA1sMs5+uzPuauzAD2Fwv/f5zXzfN+/OnvvhKJOzjLLA9xRjlMEIUwEO9A18BV/ABlh3lMraCcGxWYO1WJO148mYCnCATbBWUCrzuUUSynFKIKdQ/MBnMxyTY7MGa62iJmszg1E2HVMBXgWGjxSVS6SuQUL3Hoj/7n2ZOSE4NmtEbjRoNSnBDEbZdI4V4K3jrVzILxF/ZbXsuD0S3d+Xw729E4U1fnmnxV9Vo9VmBrNpZCrA+TibXywuCGz7/JKqYycQFBcEWJsZkhbgovqMQUYqrshWCgW2ITBSWSNB1GYGSwIBDDIEgZ8pFNiCwBDueiDPJoHBjEBih+1TKNUCti7ihASiUVkfGZW5112y2NUtS109spwAK2Cj542sPe2QmfIq69toogLRw0Ppa2qVV9kOeVdQLL2gr6BEmU9g2FEiHtQN4yG2ir+WHmTJCAw/bpX3WQUygc/N8CGIUKoEwSxY+BveUiuRrIALd2A4+6KEEGQFQYyatuNgPduauWQF3E1tMg6BeYRnGAZJBD10vOA6tgtMYAoNYA1wSnAqLCmyDHgXdOm0CQw0tsjbC/kymOuUibwicSkwBbwgiAfXAsQpoiphrwC20ZXePgk/75TFFy9lBawqst75UjbxN1JbJ/OQibf/69gqYPXgHQy3tmtfbLgLxduByKkT8EPAm12orYkzKTANARd2MS5srgOjbLGcOgEvBCbPusCZvgM+CLghkLY1wK2UQZLh8OBAQi3t2muWtOxCDO/ueCYfG5tluLlNxpqfyLgCk8ADgsB/7brMoSZrM4NRtljsFcBV7H/YJN3ns+VDlkNrKYYUYPPH/onbZxj19E40LQJj6IX6Ed6LVpqt8RzmcjwigM0fFy7bCJU2Wsd2gSl0o2O4mgzFzzOMKtx1GJy1Va4+sV3AAwHu44sQUNkGrXJiApwOqtPAChmB2CMjkAQZgdgjI5AE/78A3xCr/j5AAS8E9H4+7QJ8MxCCwFhFtdIvNBTwQcADAdV+3iqmAnzFx9bWQwHXlPYj3MHuruwfgecOdn/L/s6OhB61aD+ZqvbzVjlWgLDB4pUMOi+Jr7ZOpm7ekdH62zJUf+sfRsAEzs8A/+WrEkEnqvpexyqmAryCDMLGLJjrFDeu7DgYxRSJhd2nC+f5TYp3LJF+3iqmAgzAjpISDMWFyfed7N2PQkm+jebCZ/hUTB9iKkAoQRiIMkTv33X084T/p3/GaDy7iStwuimTP2f2Ock90e+dAAAAAElFTkSuQmCC" InformativeScreenshot="80a5bae862bcf3b404c5a9be2d7eff98.png" Selector="&lt;html app='chrome.exe' title='Generate a Random Name - Fake Name Generator'/&gt;" Url="https://www.fakenamegenerator.com/advanced.php" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

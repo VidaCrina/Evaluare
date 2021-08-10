@@ -1,0 +1,158 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SlectData" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1044,1639" sap2010:WorkflowViewState.IdRef="SlectData_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SelectData" sap:VirtualizedContainerService.HintSize="476,1474" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Eventbrite - Discover Great Events or Create Your Own &amp; Sell Tickets" sap:VirtualizedContainerService.HintSize="434,1382" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1126" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into - Japan" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_1" Text="japan">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="17f27631-effa-4922-a7cf-449a854102d3" InformativeScreenshot="c3712dbbb5dded28b027f2f8d4594eae" Selector="&lt;html app='chrome.exe' title='Eventbrite - Discover Great Events or Create Your Own &amp;amp; Sell Tickets' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="936ade09-d54c-4a9b-aade-7f3d44b1f25a">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into - Robotisc" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="Robotics">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fe7f8959-31f4-4b3b-8cab-87aca9f8cd4a" InformativeScreenshot="a4210fc1b4b71d11a8c9a601775f8afc" Selector="&lt;html app='chrome.exe' title='Eventbrite - Discover Great Events or Create Your Own &amp;amp; Sell Tickets' /&gt;&lt;webctrl tag='INPUT' type='search' idx='1' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="7689d093-2fbc-4514-bce8-c085ab6eca40">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Format'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/d/romania--cluj-napoca/robotics/" DesignTimeRectangle="24, 735, 271, 60" ElementType="Button" FriendlyName="'Format'" FullSelectorArgument="&lt;webctrl aaname='Format' parentid='root' tag='BUTTON' type='button' innertext='Format' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Format' parentid='root' tag='BUTTON' type='button' innertext='Format' check:text='Format' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARMAAABACAYAAAA5xJNVAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQdSURBVHhe7dr/b013HMfx/VWSicWwiWyWii9RhCK2H5gEXU1ksQ3FRnypGhKsiMTX2haZb9uina+lG2ob4ksWYxPVaqnSX968PsnnuG0PC973cnj+8Ejr8/nccz+N3mfPOfe+ca+9wwDgeRETAC6ICQAXxASAC2ICwAUxAeCCmABwQUwAuCAmAFwQEwAuiAkAF8QEgAtiAsAFMQHggpgAcEFMALggJgBcEBMALogJABfEBIALYgLABTEB4IKYAHBBTAC4ICYAXBATAC5cY7Jzxx57s0dRqoql36Y+BsCrIS8xeX9AiY0rKe2kat221McA6LDvqvfZl58vSZ3LirzE5FU6C4k/k76mzQPPq/FGs73TZ0T4PctyUIjJ/yAmKIQzDeczH5QXEpP2tvtWc+CYTRhXZm/1HGy9ew21T8vmW8Ops9Z+936yTseJL+Sy0vLw/bEjJzvN7d1da4u+Xh2O0b/fSFu2ZK013WyxX2vqbFTx5LCmZPRUO153Ojmu3Gq+bevWbLXBRR+GNXEP+k/VfMvD+c9mLgxzuTSmudxjAR6yHpSC34BVLHZW700iMmbUlPCi178Vg8MH65PjxWCI5saOnma/1//Raa7f28U2fOjEcBwdT2OlU+ZY0cDxYX2Mhb6/euV6eOzt1jabN7cyjE+eNMtWrthoCxesCs8xYvjHduniFbvTejdcx+pY8ZhapzHNxT0CnrIclILfgL186R8rHjbRBn0wwf7680IYU2B+3n8oBGX6J/Osuak1jMdgzJzxlTU1tiTPkztXWVFlbXfaw5iOobGB740NZzkau9l4q9tZzYXzf9uQQR+FM6P//m0MY9rDxvXVYd0P3/8UxiT+TPoax4B8UUze7Tsy/M59MYuYJGchaXTmoTXls5d3+guvF7Ve3IrMubOXw1gMxoFfjibrojgXAyF6nB6v+Ogypuva3Eikifv/pnJDtzFignzLckik4DF53Jp4j0KXKvXHG8JYWjCiJ8Wk632NuDYGQWchJ+pOh+joLEpzuXL3RkxQCFkPibw8ZybXboT7GmlnJt4x+a3+TLg/orVbNu+yQwdPBEsXr+22f2KCfMt9azirIZGCxyTtnonoUuZx90y8YxL3qXjEd49030X3X7ruP67dvu3HZAzwphv7WQ6JFDwmz/JujndMdBmld4H0/OVzlod3aXTJoz103X9tTV2yt7mzK8KZTJwD8EjBYyJP+zkT75jo+fftqU0+h6L7JqtXbrINVTu67V9nSfrsimKiOa2LcwAecY0JgNcXMQHggpgAcEFMALggJgBcEBMALogJABfEBIALYgLABTEB4IKYAHBBTAC4ICYAXBATAC6ICQAXxASAC2ICwAUxAeCCmABwQUwAuCAmAFwQEwAuiAkAF8QEgAtiAsBBhz0AC7Fyf1LiADgAAAAASUVORK5CYII=" InformativeScreenshot="b4519c390055ca43eba1a9f9f69b1716.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Cluj-Napoca, Romania Robotics Events | Eventbrite' /&gt;" SearchSteps="Selector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="40, 753, 60, 24" ElementType="Text" FriendlyName="'Format'" FullSelectorArgument="&lt;webctrl aaname='Format' parentid='root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Format' parentid='root' tag='DIV' type='' check:text='Format' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEAAAAAcCAYAAADRJblSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALcSURBVFhH7VZrSxRhFO5XBUVRIESUoZjhlthqWB8swbKtkOiDty5GmW6ZkGZKUJlrRZTaBd208rLdtDQxJexK62VX102/nPY5cIaZ3ddoYj458+FhZp5z3vOe88x5z8yq39ElsjMcAVSkneAIoCLtBEcAFWknOALoH1pb2mjN6hQlqiqvGhauFCgF2LrZTTnuQgMa6psNC1cKlAKspLctNeGqsjsC6B/+VYBoZJG6OnspN8dD69em0YZ16XTUc5IG345QdGFR80Mc2dxTWMb3vS/eGGztD/109kwtx9iUtIsunK+j6akQPevqo0xXPvu4sw5Sf987LS4wOzNH9VduUVrKXvaRHIYGR9keitmPF1WwTQ9wsEkc00MQBbb62rXCd2cWcKJ4RgHPuwNaPCkSgC076xC9Drw32JI2uigjPY/jIB64woISSknew/5SIO6/Tv7ktXPhCJWXepnP33+Cai42UcWpy7zHzowDNP5pkubDC3TH18GxJCb8wMEmOZoeghPjX8i1I49St+XS8Icx5iDKk0c9LMKRw+U0Mx1mXoosOnaapoMhbR+9zVvVQJH5KHOIAS55SzZ3E7ip4GxC94yNfqbtqfu4A398DzKHHJqu+djv3t3HzAFSE67C6WH6COANw6esuNqgJBJBQhDm48gEc1Jk59OXmp9AbFIUgHVYD8HQ4vG++sJUkPwveRsTOMsEWM5HzhzaONA/yJyqSMHfBIg/p+IrReBtD8RmAoRCt8Kmhz43ywVYtgO+/eJzquoAqwV4FRji8w7fmzfuU0/3AKPyXF1C/pYLoJoBANp8uRlgtQCSJwqWrw7mCOZJfP7ie7v5gcbpYVqA//kKWC0Ajhi+Hti/rKSapzuOA3KIz98f+5xKbqXFVdwxYgNMCwCY/Q+wWgDs39Hm1/4TMAdqa65TY0NLQv7oRvxbQADY4Cc2wCCAHeEIoCLtBEcAFWknOAKoSPtgif4AOFph7ZbMttgAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Conference'" sap:VirtualizedContainerService.HintSize="334,166" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.eventbrite.com/d/japan/robotics/" DesignTimeRectangle="24, 433, 271, 52" ElementType="Button" FriendlyName="'Conference'" FullSelectorArgument="&lt;webctrl aaname='Conference' parentid='root' tag='BUTTON' innertext='Conference' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Conference' parentid='root' tag='BUTTON' innertext='Conference' type='button' check:text='Conference' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARMAAAA4CAYAAADetRz5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQcSURBVHhe7drBSxtpGMfx/asCnuaUk1Ch5CCBVqEuC4IQKC4s24sUlw0uBE8ubC4KhcDSgcqKS2XLFqGKYClEhDkNlBhEZYXgstLLs+/7zhuTTKYxbR+IKd/DB8y877zvzOH98T7v+M31fx8EAL4UYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJABWECQAVhAkAFYQJAxcjDpHX8p1Qez0g+NyUTuYJMPlqRsH6Z2fezXDVkZ3k+Gb/yNrsPgC820jBpHa7JdG5GntbeSnx6KRenDamHP7lrlQOlQDFzBMGKvD7PaAOgZoRhEkttdkrmnsV9bdGzeZmYfS5x6vpnOViTiYVNaWa1AVAzujA52ZRS7lupRRltUU0e5hZl6yT53TrelPJswZRBplTJz0s5jKTl+zbDRZn4blWq7VLGtm83knFskLjyyXNlzqVE4YrMTSbj5WdNWXXc2QUdVky/71ek4uZbk0N7/WRfqu1SLChK6dd9aV4NMb/j58vbZzBlXGlVXsftNv9uj4oStO/tejdgnIwuTGz5kVuSndvKj9NX8iSYkfJfDWmZBdyKX0m5UJAn22eu3S1mWxbtnrn2i11bOv0oW6f+/tTO5GJ7SYLCmuz59ov6upQC8xz+twuTYFFq7xqm7PpXrq+OpGrmK/0eu/GTM5iiTP92NNT8yXymzIrtWGdSXzf9C1Wp27H8u9l7bd/r80g2FjrvBoyTOx8mzRdm8aXKFLeAS8k193dPuymfHkxJ5cD/7gmTM9kqTUkp7N057Pxgrr1IFrALk1/2O+3uzMXsUOzib1+rV+W+vWb+Hjx/xnznJkD8jizr3Wz4tN/t5h5gDNzNMid+LvOmzAnf+8Wa/gpjAyJf/chibki48LEwSdp6Sh/vvt9puDDpni9dKt1IgnDw/KlnSXH3Zo19z+xcMvoDd9mdPIB1i8wvqE/fmQwKk2SnUP7blBw3/Xv1hYndmTyoSdTVp9vg+YfYmSzvckaCr8IIw6Tr03B4JE3/aTj6Y1UeBgV5+tKfGwxzZjJ0mPgzjIV1qbfPVN6b8e4VpLybBExfmLgzk6KUXybzX19dJuce/mvTbfOnz0z2KjOpM5NF2Xjn39WfxwQ/EzAYPyMNE6v/n9aWZONN7wHkoC8enxom6a85wWTveH1hYnV/zTHPOP24Knv+S9Ot8/d9zenca/W8W1CUueVNif7ptAPjYuRhAuDrQJgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUEGYAFBBmABQQZgAUPBB/gf+SnHGBybF3AAAAABJRU5ErkJggg==" InformativeScreenshot="9cb1e9d691cfdf244a162d19dc9ce67e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Japan Robotics Events | Eventbrite' /&gt;" SearchSteps="Selector">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="52, 449, 73, 20" ElementType="Text" FriendlyName="'Conference'" FullSelectorArgument="&lt;webctrl aaname='Conference' parentid='root' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Conference' parentid='root' tag='SPAN' type='' check:text='Conference' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE0AAAAYCAYAAAC/SnD0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVFhH7ZbPSxtBFMf7VwVy2lNOggHZgwQ0AS2FQGBBUij1ImLpkkLwlEL3oiAEiguGikWpVAJVBEVYEfa0IDGEGBoIloqXb+fXur9istn2UGEOX9id9+a9mc/Oe7Mv7n8/QGoySWgJJKElkISWQBJaAkloCSShJVAE2uDqK6pLeWRSWaRTKqYWKjCtfsDnr3TXwsFakcevng/3+c8VgDY4q2E2lcdq/RxOp49epwXLfMfGqqf/CBzJoSgVHN0OsT0T+aA5qBeyWNxyAg5U9lYR6cI2nNB4Ip3WkC410B5meybyoN00oKVeom4HHZjsOuZTZeze8PfBVQN6QSXlS0osU4Ru2hgI37ZZRvrVOgy3BKl9r8XjUGCs7IVYefZhmxUsTvF4mQJpB1feqT6rEr/XFVRZvhrO6PjNCQy3hSg5aB9P0L6LkZ9J5MvQNZD2o63jyHFtYm8LOSjuXN/eXHnQaNmkVnAwrmw6h1hW8tC/tTAgCx04h9BVFct7XWZni6bl3Owye69JS/4tdjtifuik9fZWoKg1HAt7z9qAppB1iHcGTSmjftEi7eIX6YmXMEg+7bPD4vMemcPsp8tY+Xk+0h4cGqsLa4P4qwYsGkvsjc6lvve3NjZL3t5cTQytvUOShMqLLVTjY+w5YCdlP5clPVG8B6B1satloZnBk3Dwhozt8IUyaB9OPDvrieTE0U26Y5aBGTpGnkfnH5LvloASFTZsbxSyuzd3LF55OtsokvI0r8WiwrceBZExnlh0C2bpKWjcFihZoRlxchg0f75wiT+Kf/DR+UNrCYnNHRZ7mpxEn1+si4AFExMnP2mjoPEvr38npfLoH1QEGj1pc3XYPh+/RuePcdLWmpEeFpYPmu+Xw7xEW/xy2F/WMa+oWN0XdR2np8WGJnpMaQOW2/OuSbxpFXqTg4xAYz0tB32f57+/6/O+JG73cfnDPe24mg/1tDI2L8ReRb9U3gdBBqBRRX9uV7D5I9gIR90wk0IL357KVDBeBBqV//Yka5xdMnAsbvax+SO3pzeXKrA3cjMvrjVg//TsVBFoUuMloSWQhJZAEloCSWgJJKElkIQ2sR7wB4xJnCUUgubAAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="3754d5a6a384e3c8e7a45e68e63a9557.png" Selector="&lt;html app='chrome.exe' title='Eventbrite - Discover Great Events or Create Your Own &amp;amp; Sell Tickets'/&gt;" Url="https://www.eventbrite.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
