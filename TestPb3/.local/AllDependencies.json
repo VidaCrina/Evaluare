@@ -5018,9 +5018,9 @@
     "restore": {
       "projectUniqueName": "TestPb3",
       "projectName": "TestPb3",
-      "projectPath": "C:\\Users\\Crina\\Documents\\UiPath\\TestPb3\\.local",
+      "projectPath": "C:\\Users\\Crina\\Documents\\GitHub\\Evaluare\\TestPb3\\.local",
       "packagesPath": "C:\\Users\\Crina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Crina\\Documents\\UiPath\\TestPb3\\.local"
+      "outputPath": "C:\\Users\\Crina\\Documents\\GitHub\\Evaluare\\TestPb3\\.local"
     },
     "frameworks": {
       "net461": {

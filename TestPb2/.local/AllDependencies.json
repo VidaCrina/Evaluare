@@ -5018,9 +5018,9 @@
     "restore": {
       "projectUniqueName": "TestPb2",
       "projectName": "TestPb2",
-      "projectPath": "C:\\Users\\Crina\\Documents\\UiPath\\TestPb2\\.local",
+      "projectPath": "C:\\Users\\Crina\\Documents\\GitHub\\Evaluare\\TestPb2\\.local",
       "packagesPath": "C:\\Users\\Crina\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Crina\\Documents\\UiPath\\TestPb2\\.local"
+      "outputPath": "C:\\Users\\Crina\\Documents\\GitHub\\Evaluare\\TestPb2\\.local"
     },
     "frameworks": {
       "net461": {

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o6wr735a9h1IJuJ6Lkbkn2slumngN/qbIVKIGwRBPRN29ClHNa0o/+IDG4Pz2RYx8U0/MmA49kvbg0RBYgHeQw==",
+  "dgSpecHash": "rZg5r/KTSYlbJAmDtSrZOsjLsq4SHSb9EXRNzAF87VM8vhT9CBGCBIn9PYZL63TtXEbZxiENZxPbtF07GIODwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Crina\\Documents\\UiPath\\TestPb3\\.local\\",
+  "projectFilePath": "C:\\Users\\Crina\\Documents\\GitHub\\Evaluare\\TestPb3\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\Crina\\.nuget\\packages\\closedxml\\0.87.1\\closedxml.0.87.1.nupkg.sha512",
     "C:\\Users\\Crina\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",

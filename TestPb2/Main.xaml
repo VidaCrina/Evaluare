@@ -86,17 +86,18 @@
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence - PB2" sap:VirtualizedContainerService.HintSize="376,528" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence - PB2" sap:VirtualizedContainerService.HintSize="376,559" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="name" />
       <Variable x:TypeArguments="x:String" Name="email" />
       <Variable x:TypeArguments="x:String" Name="phone" />
       <Variable x:TypeArguments="x:String" Name="CountryCode" />
-      <Variable x:TypeArguments="x:String" Name="path">
+      <Variable x:TypeArguments="x:String" Name="filepath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\Users\Crina\Desktop\FWF\test-Crina\FakePerson.txt</Literal>
+          <Literal x:TypeArguments="x:String">FakePerson.txt</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -118,6 +119,12 @@
         <OutArgument x:TypeArguments="x:String" x:Key="out_CountryCode">[CountryCode]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:WriteTextFile DisplayName="Write Text File - write persons detalis" FileName="[path]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Name: &quot;+name+vbNewLine+&quot;Email: &quot;+email+vbNewLine+&quot;Phone: &quot;+phone+vbNewLine+&quot;Country Code: &quot;+CountryCode+vbNewLine]" />
+    <ui:WriteTextFile sap2010:Annotation.AnnotationText="Write fake persons details in a text file. " DisplayName="Write Text File - write persons detalis" FileName="[path.Combine(Environment.CurrentDirectory,filepath)]" sap:VirtualizedContainerService.HintSize="334,163" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[&quot;Name: &quot;+name+vbNewLine+&quot;Email: &quot;+email+vbNewLine+&quot;Phone: &quot;+phone+vbNewLine+&quot;Country Code: &quot;+CountryCode+vbNewLine]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteTextFile>
   </Sequence>
 </Activity>

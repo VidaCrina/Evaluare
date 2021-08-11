@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1044,1898" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1044,2232" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
       <x:String>System.Activities</x:String>
@@ -34,7 +34,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="40">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -55,9 +55,19 @@
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence - PB1" sap:VirtualizedContainerService.HintSize="602,1733" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Read SampleExcel, Choose Region,  Filter the values by employee Region entered by user, Sort Data by name and city" DisplayName="Sequence - PB1" sap:VirtualizedContainerService.HintSize="602,2067" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
       <Variable x:TypeArguments="x:String" Name="Region" />
@@ -65,28 +75,39 @@
       <Variable x:TypeArguments="sd:DataTable" Name="SortedDataTable" />
       <Variable x:TypeArguments="sd:DataColumn" Name="city" />
       <Variable x:TypeArguments="x:String" Name="Regions" />
-      <Variable x:TypeArguments="x:String" Name="path">
+      <Variable x:TypeArguments="x:String" Name="filepath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">C:\Users\Crina\Desktop\FWF\test-Crina\SampleExcel (1) 1.xlsx</Literal>
+          <Literal x:TypeArguments="x:String">SampleExcel (1) 1.xlsx</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange AddHeaders="True" DataTable="[DataTable]" DisplayName="Read SampleExcel - Read Range" sap:VirtualizedContainerService.HintSize="560,87" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[path]">
+    <ui:ReadRange AddHeaders="True" sap2010:Annotation.AnnotationText="Read excel file SampleExcel (1) 1.xlsx and extracting data in a data table (DataTable)" DataTable="[DataTable]" DisplayName="Read SampleExcel - Read Range" sap:VirtualizedContainerService.HintSize="560,129" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[path.Combine(Environment.CurrentDirectory,filepath)]">
       <ui:ReadRange.Range>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
         </InArgument>
       </ui:ReadRange.Range>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:ReadRange>
-    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Choose Region - Input Dialog" sap:VirtualizedContainerService.HintSize="560,291" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Region:" Options="[(From r As datarow In DataTable.rows.cast(Of datarow) Select convert.ToString(r(&quot;Region&quot;))).tolist().distinct.toarray]" Title="Employee Region">
+    <ui:InputDialog OptionsString="{x:Null}" sap2010:Annotation.AnnotationText="Asking user for Region" DisplayName="Choose Region - Input Dialog" sap:VirtualizedContainerService.HintSize="560,322" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Region:" Options="[(From r As datarow In DataTable.rows.cast(Of datarow) Select convert.ToString(r(&quot;Region&quot;))).tolist().distinct.toarray]" Title="Employee Region">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[Region]</OutArgument>
       </ui:InputDialog.Result>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
     <Assign sap:VirtualizedContainerService.HintSize="560,60" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
@@ -96,7 +117,7 @@
         <InArgument x:TypeArguments="x:Int32">0</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,449" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" sap2010:Annotation.AnnotationText="Count how many times the Selected Region apares in DataTable" DataTable="[DataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,480" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
@@ -108,7 +129,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[row.item(&quot;Region&quot;).Equals(Region)]" sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[row.item(&quot;Region&quot;).Equals(Region)]" DisplayName="If " sap:VirtualizedContainerService.HintSize="484,237" sap2010:WorkflowViewState.IdRef="If_1">
               <If.Then>
                 <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
                   <Assign.To>
@@ -127,13 +148,32 @@
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:ForEachRow>
-    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="Name" DataTable="[DataTable]" DisplayName="Sort Data Table - Descending Order of Name" sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="SortDataTable_2" Order="Decending" OutputDataTable="[SortedDataTable]" SortOrder="Descending" />
-    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" ColumnName="City" DataTable="[DataTable]" DisplayName="Sort Data Table - Ascending order of City " sap:VirtualizedContainerService.HintSize="560,22" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[SortedDataTable]" SortOrder="Ascending" />
-    <ui:WriteRange AddHeaders="True" DataTable="[SortedDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="560,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1Duplicated" StartingCell="A1" WorkbookPath="[path]" />
-    <ui:FilterDataTable DataTable="[DataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="560,160" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DataTable]" SelectColumnsMode="Keep">
+    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sorting DataTable in descending order by Name" ColumnName="Name" DataTable="[DataTable]" DisplayName="Sort Data Table - Descending Order of Name" sap:VirtualizedContainerService.HintSize="560,64" sap2010:WorkflowViewState.IdRef="SortDataTable_2" Order="Decending" OutputDataTable="[SortedDataTable]" SortOrder="Descending">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:SortDataTable>
+    <ui:SortDataTable ColumnIndex="{x:Null}" DataColumn="{x:Null}" sap2010:Annotation.AnnotationText="Sorting DataTable in ascending order by City" ColumnName="City" DataTable="[SortedDataTable]" DisplayName="Sort Data Table - Ascending order of City " sap:VirtualizedContainerService.HintSize="560,64" sap2010:WorkflowViewState.IdRef="SortDataTable_1" Order="Ascending" OutputDataTable="[SortedDataTable]" SortOrder="Ascending">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:SortDataTable>
+    <ui:WriteRange AddHeaders="True" sap2010:Annotation.AnnotationText="Write the Duplicated Sheet with Sorted Data" DataTable="[SortedDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="560,146" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1Duplicated" StartingCell="A1" WorkbookPath="[path.Combine(Environment.CurrentDirectory,filepath)]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+    <ui:FilterDataTable sap2010:Annotation.AnnotationText="Filter the values by employee Region entered by user" DataTable="[DataTable]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="560,191" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DataTable]" SelectColumnsMode="Keep">
       <ui:FilterDataTable.Filters>
         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
           <ui:FilterOperationArgument BooleanOperator="And" Operator="NOTEQ">
@@ -151,13 +191,23 @@
           <x:Null />
         </scg:List>
       </ui:FilterDataTable.SelectColumns>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:FilterDataTable>
-    <ui:WriteRange AddHeaders="True" DataTable="[DataTable]" DisplayName="Write sheet “&lt;Count&gt;&lt;Region name&gt;“ - Write Range" sap:VirtualizedContainerService.HintSize="560,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[counter.ToString+Region]" WorkbookPath="[path]">
+    <ui:WriteRange AddHeaders="True" sap2010:Annotation.AnnotationText="create a new excel worksheet with the name - “&lt;Count&gt;&lt;Region name&gt;“  with the Filtered DataTable" DataTable="[DataTable]" DisplayName="Write sheet “&lt;Count&gt;&lt;Region name&gt;“ - Write Range" sap:VirtualizedContainerService.HintSize="560,157" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[counter.ToString+Region]" WorkbookPath="[path.Combine(Environment.CurrentDirectory,filepath)]">
       <ui:WriteRange.StartingCell>
         <InArgument x:TypeArguments="x:String">
           <Literal x:TypeArguments="x:String" Value="" />
         </InArgument>
       </ui:WriteRange.StartingCell>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
     </ui:WriteRange>
   </Sequence>
 </Activity>
